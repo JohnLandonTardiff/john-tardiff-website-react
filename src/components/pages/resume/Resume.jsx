@@ -1,6 +1,10 @@
 function Resume() {
     return(
-        <div>Resume</div>
+        <div className="card bg-base-100 content-card">
+            <div className="card-body">
+                Resume
+            </div>
+        </div>
     )
 }
 

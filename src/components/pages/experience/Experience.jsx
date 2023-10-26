@@ -1,5 +1,11 @@
 import { useState } from "react";
 import "./Experience.css"
+import WorkExperience from "./experience-tabs/WorkExperience";
+import Certifications from "./experience-tabs/Certifications";
+import WebApps from "./experience-tabs/WebApps";
+import UnityGames from "./experience-tabs/UnityGames";
+import ConsoleApps from "./experience-tabs/ConsoleApps";
+import Competitions from "./experience-tabs/Competitions";
 
 function Experience() {
     const [activeTab, changeTab] = useState(1);
@@ -11,6 +17,25 @@ function Experience() {
         oldTab.classList.remove("tab-active");
         newTab.classList.add("tab-active");
         changeTab(value);
+    }
+
+    function displayTab() {
+        switch(activeTab) {
+            case 1:
+                return <WorkExperience />;
+            case 2:
+                return <Certifications />;
+            case 3:
+                return <WebApps />;
+            case 4:
+                return <UnityGames />;
+            case 5:
+                return <ConsoleApps />;
+            case 6:
+                return <Competitions />;
+            default:
+                selectTab(1);
+        }
     }
 
     return(
@@ -25,7 +50,9 @@ function Experience() {
             </div>
             <div className="card bg-base-100 experience-card">
                 <div className="card-body">
-
+                    <div className="carousel carousel-cente w-full experience-carousel">
+                        {displayTab()}
+                    </div>
                 </div>
             </div>
         </div>

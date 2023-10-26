@@ -1,7 +1,11 @@
 function AboutMe() {
 
     return(
-        <div>About Me</div>
+        <div className="card bg-base-100 content-card">
+            <div className="card-body">
+                About Me
+            </div>
+        </div>
     )
 }
 

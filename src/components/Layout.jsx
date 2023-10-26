@@ -39,7 +39,7 @@ function Layout() {
                         </div>
                     </div>
 
-                    <div className="content-container bg-base-200">
+                    <div className="content-container bg-base-200 p-5">
                         <Outlet />
                     </div>
                     <footer className="footer footer-center p-6 bg-base-300">
@@ -68,7 +68,6 @@ function Layout() {
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                    {/* Sidebar content here */}
                     <li><Link to="/about-me" reloadDocument>About Me</Link></li>
                     <li><Link to="/experience" reloadDocument>Experience</Link></li>
                     <li><Link to="/resume" reloadDocument>Resume</Link></li>
