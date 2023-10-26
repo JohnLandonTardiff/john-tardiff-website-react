@@ -1,0 +1,9 @@
+.experience-container {
+    height: 95%;
+    padding: 25px;
+}
+
+.experience-card {
+    height: 100%;
+    border-radius: 0 1rem 1rem 1rem;
+}
