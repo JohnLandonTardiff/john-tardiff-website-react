@@ -19,11 +19,10 @@ function Layout() {
 
     return(
         <div className="layout-container">
-             <div className="navbar bg-base-300">
-                <div className="navbar-start">
+             <div className="navbar bg-base-300 flex-col">
+                <div className="navbar-start" />
+                <div className="navbar-center flex-col">
                     <p>John Landon Tardiff</p>
-                </div>
-                <div className="navbar-end">
                     <div className="tabs">
                         <a id="about-me-tab" className="tab" onClick={() => tabClicked("about-me")}>About Me</a>
                         <a id="experience-tab" className="tab" onClick={() => tabClicked("experience")}>Experience</a>
@@ -31,6 +30,7 @@ function Layout() {
                         <a id="contact-tab" className="tab" onClick={() => tabClicked("contact")}>Contact</a>
                     </div>
                 </div>
+                <div className="navbar-end" />
             </div>
 
             <div className="content-container bg-base-200 p-5">
