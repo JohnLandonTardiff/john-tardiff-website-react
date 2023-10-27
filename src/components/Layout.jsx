@@ -1,16 +1,21 @@
-import { Outlet, useLoaderData, useLocation, Link } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import "./Layout.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Layout() {
-    const [selectedNav, setSelectedNav] = useState("about-me-nav");
+    const [selectedTab, setSelectedTab] = useState("about-me");
+    const navigate = useNavigate();
 
-    function navLinkClicked(selectedId){
-        if(selectedNav == selectedId) return;
-        document.getElementById(selectedNav).classList.remove("nav-selected");
-        document.getElementById(selectedId).classList.add("nav-selected");
-        setSelectedNav(selectedId);
+    function tabClicked(selectedId){
+        if(selectedTab == selectedId) return;
+        document.getElementById(selectedTab + "-tab").classList.remove("tab-active");
+        setSelectedTab(selectedId);
     };
+
+    useEffect(() => {
+       document.getElementById(selectedTab + "-tab").classList.add("tab-active");
+       navigate("/" + selectedTab);
+    },[selectedTab]);
 
     return(
         <div className="layout-container">
@@ -18,13 +23,13 @@ function Layout() {
                 <div className="navbar-start">
                     <p>John Landon Tardiff</p>
                 </div>
-                <div className="nav-bar-center">
-                    <ul className="menu menu-horizontal">
-                        <li><Link id="about-me-nav" className="navbar-link nav-selected" to="/about-me" onClick={() => navLinkClicked("about-me-nav")}>About Me</Link></li>
-                        <li><Link id="experience-nav" className="navbar-link" to="/experience" onClick={() => navLinkClicked("experience-nav")}>Experience</Link></li>
-                        <li><Link id="resume-nav" className="navbar-link" to="/resume" onClick={() => navLinkClicked("resume-nav")}>Resume</Link></li>
-                        <li><Link id="contact-nav" className="navbar-link" to="/contact" onClick={() => navLinkClicked("contact-nav")}>Contact</Link></li>
-                    </ul>
+                <div className="navbar-end">
+                    <div className="tabs">
+                        <a id="about-me-tab" className="tab" onClick={() => tabClicked("about-me")}>About Me</a>
+                        <a id="experience-tab" className="tab" onClick={() => tabClicked("experience")}>Experience</a>
+                        <a id="resume-tab" className="tab" onClick={() => tabClicked("resume")}>Resume</a>
+                        <a id="contact-tab" className="tab" onClick={() => tabClicked("contact")}>Contact</a>
+                    </div>
                 </div>
             </div>
 
