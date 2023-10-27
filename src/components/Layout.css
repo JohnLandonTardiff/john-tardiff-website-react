@@ -6,7 +6,7 @@
 }
 
 .content-container {
-    height: 84.75%;
+    flex: 1 1 auto
 }
 
 .content-card {
@@ -19,8 +19,4 @@
 
 .drawer-content {
     height: 100%;
-}
-
-.footer {
-    margin-top: auto;
 }

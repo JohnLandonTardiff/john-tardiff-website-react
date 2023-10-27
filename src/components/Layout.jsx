@@ -1,21 +1,19 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import "./Layout.css";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 function Layout() {
-    const [selectedTab, setSelectedTab] = useState("about-me");
-    const navigate = useNavigate();
-
-    function tabClicked(selectedId){
-        if(selectedTab == selectedId) return;
-        document.getElementById(selectedTab + "-tab").classList.remove("tab-active");
-        setSelectedTab(selectedId);
-    };
+    const location = useLocation();
 
     useEffect(() => {
-       document.getElementById(selectedTab + "-tab").classList.add("tab-active");
-       navigate("/" + selectedTab);
-    },[selectedTab]);
+        const tabs = [...document.getElementsByClassName("nav-tab")];
+        tabs.forEach((tab) => {
+            if("/" + tab.id == location.pathname + "-tab")
+                tab.classList.add("tab-active");
+            else
+                tab.classList.remove("tab-active");
+        })
+    },[]);
 
     return(
         <div className="layout-container">
@@ -24,10 +22,10 @@ function Layout() {
                 <div className="navbar-center flex-col">
                     <p>John Landon Tardiff</p>
                     <div className="tabs">
-                        <a id="about-me-tab" className="tab" onClick={() => tabClicked("about-me")}>About Me</a>
-                        <a id="experience-tab" className="tab" onClick={() => tabClicked("experience")}>Experience</a>
-                        <a id="resume-tab" className="tab" onClick={() => tabClicked("resume")}>Resume</a>
-                        <a id="contact-tab" className="tab" onClick={() => tabClicked("contact")}>Contact</a>
+                        <a id="about-me-tab" className="tab nav-tab" href="/about-me">About Me</a>
+                        <a id="experience-tab" className="tab nav-tab" href="/experience">Experience</a>
+                        <a id="resume-tab" className="tab nav-tab" href="/resume">Resume</a>
+                        <a id="contact-tab" className="tab nav-tab" href="/contact">Contact</a>
                     </div>
                 </div>
                 <div className="navbar-end" />
