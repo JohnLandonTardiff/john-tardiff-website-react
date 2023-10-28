@@ -54,9 +54,7 @@ function Experience() {
             </div>
             <div className="card bg-base-100 experience-card">
                 <div className="card-body">
-                    <div className="carousel carousel-cente w-full experience-carousel">
-                        {displayTab()}
-                    </div>
+                    {displayTab()}
                 </div>
             </div>
         </div>

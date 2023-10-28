@@ -2,23 +2,29 @@ import ExperienceSlide from "./ExperienceSlide";
 
 function WorkExperience() {
     return(
-        <>
+        <div className="carousel carousel-center w-full experience-carousel">
             <ExperienceSlide slideNumber={1} firstSlide>
-                <div>Slide 1</div>
+                <h2 className="card-title text-3xl">Junior Software Developer - amshot</h2>
+                <h3 className="text-3xl">May 2023 to Present</h3>
+                <ul className="list-disc pl-5">
+                    <li><p className="text-2xl">Used C#, Javascript, HTML, CSS, SQL Server, React, ASP.NET MVC, and Angular to create and maintain applications used by clients</p></li>
+                    <li><p className="text-2xl">Worked on multiple client projects simultaneously, balancing workload and shifting priorities</p></li>
+                    <li><p className="text-2xl">Used Agile principles to manage time between multiple clients to ensure deadlines and expectations were met</p></li>
+                </ul>
             </ExperienceSlide>
-            <ExperienceSlide slideNumber={2}>
-                <div>Slide 2</div>
+            <ExperienceSlide slideNumber={2} lastSlide>
+            <h2 className="card-title text-3xl">Summer 2022 It Intern - Devon Energy</h2>
+                <h3 className="text-3xl">May 2022 to August 2022</h3>
+                <ul className="list-disc pl-5">
+                    <li><p className="text-2xl">Used Angular, .Net, and SQL to add features and fix bugs to a work order portal used by all on-site oil rig operators</p></li>
+                    <li><p className="text-2xl">Gained experience working on a large scale application that uses multiple different interconnected technologies and systems</p></li>
+                    <li><p className="text-2xl">Participated in volunteer work relating to STEM</p></li>
+                    <li><p className="text-2xl">Collaborated with a team to ensure a quality application was being produced</p></li>
+                    <li><p className="text-2xl">Exposed to multiple facets of the oil and gas industry</p></li>
+                    <li><p className="text-2xl">Made connections and attended social events within the company</p></li>
+                </ul>
             </ExperienceSlide>
-            <ExperienceSlide slideNumber={3}>
-                <div>Slide 3</div>
-            </ExperienceSlide>
-            <ExperienceSlide slideNumber={4}>
-                <div>Slide 4</div>
-            </ExperienceSlide>
-            <ExperienceSlide slideNumber={5} lastSlide>
-                <div>Slide 5</div>
-            </ExperienceSlide>
-        </>
+        </div>
     )
 }
 
