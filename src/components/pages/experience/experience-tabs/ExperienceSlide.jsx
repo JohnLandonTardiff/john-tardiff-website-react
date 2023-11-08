@@ -26,7 +26,7 @@ function ExperienceSlide(props) {
 
     return(
         <div id={"slide" + props.slideNumber} className="carousel-item relative w-full justify-center">
-            <div className="card bg-gray-600 w-4/5">
+            <div className="card bg-base-200 w-4/5">
                 <div className="card-body">
                     {props.children}
                 </div>
