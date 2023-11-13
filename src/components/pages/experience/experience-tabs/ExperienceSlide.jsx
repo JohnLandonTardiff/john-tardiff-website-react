@@ -1,6 +1,9 @@
 function ExperienceSlide(props) {
 
     function displaySlideButtons() {
+        if(props.onlySlide) {
+            return  <div className="absolute flex justify-between transform -translate-y-1/2 right-5 top-1/2"></div>
+        }
         if(props.firstSlide) {
             return(
                 <div className="absolute flex justify-between transform -translate-y-1/2 right-5 top-1/2">
@@ -15,7 +18,6 @@ function ExperienceSlide(props) {
                 </div>
             );
         }
-
         return(
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href={"#slide" + (props.slideNumber - 1)} className="btn btn-circle">❮</a> 

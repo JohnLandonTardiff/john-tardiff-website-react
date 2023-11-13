@@ -1,8 +1,8 @@
 import ExperienceSlide from "./ExperienceSlide";
-import ProjectTrackerReact1 from "../../../../assets/WebAppPictures/ProjectTrackerReact-cap1.png";
-import ProjectTrackerReact2 from "../../../../assets/WebAppPictures/ProjectTrackerReact-cap2.png";
-import PreviousWebsite1 from "../../../../assets/WebAppPictures/PreviousWebsite-cap1.png";
-import PreviousWebsite2 from "../../../../assets/WebAppPictures/PreviousWebsite-cap2.png";
+import ProjectTrackerReact1 from "../../../../assets/WebApps/ProjectTrackerReact-cap1.png";
+import ProjectTrackerReact2 from "../../../../assets/WebApps/ProjectTrackerReact-cap2.png";
+import PreviousWebsite1 from "../../../../assets/WebApps/PreviousWebsite-cap1.png";
+import PreviousWebsite2 from "../../../../assets/WebApps/PreviousWebsite-cap2.png";
 
 function WebApps() {
     return(
