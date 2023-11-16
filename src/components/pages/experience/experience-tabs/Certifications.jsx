@@ -21,7 +21,8 @@ import CPHTMLCert from "../../../../assets/Certifications/CPHTMLCert.png";
 import CPHTMLScore from "../../../../assets/Certifications/CPHTMLScore.png";
 import CPJSCert from "../../../../assets/Certifications/CPJavascriptCert.png";
 import CPJSScore from "../../../../assets/Certifications/CPJavascriptScore.png";
-
+import CPSoftwareCert from "../../../../assets/Certifications/CPSoftwareCert.png";
+import CPSoftwareScore from "../../../../assets/Certifications/CPSoftwareScore.png";
 
 function Certifications() {
     return(
@@ -96,11 +97,18 @@ function Certifications() {
                     <figure style={{width: '30%'}}><img src={CPHTMLScore} alt="Certiport HTML and CSS Score" /></figure>
                 </div>
             </ExperienceSlide>
-            <ExperienceSlide slideNumber={11} lastSlide>
+            <ExperienceSlide slideNumber={11}>
                 <h2 className="card-title text-3xl">Certiport - Information Technology Specialist: JavaScript</h2>
                 <div className="flex justify-center gap-10">
                     <figure className="w-1/2"><img src={CPJSCert} alt="CertiPort JavaScript Certification" /></figure>
                     <figure style={{width: '30%'}}><img src={CPJSScore} alt="Certiport JavaScript Score" /></figure>
+                </div>
+            </ExperienceSlide>
+            <ExperienceSlide slideNumber={12} lastSlide>
+                <h2 className="card-title text-3xl">Certiport - Information Technology Specialist: Software Development</h2>
+                <div className="flex justify-center gap-10">
+                    <figure className="w-1/2"><img src={CPSoftwareCert} alt="CertiPort Software Development Certification" /></figure>
+                    <figure style={{width: '30%'}}><img src={CPSoftwareScore} alt="Certiport Software Development Score" /></figure>
                 </div>
             </ExperienceSlide>
         </div>
