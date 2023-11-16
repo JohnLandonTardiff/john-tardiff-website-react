@@ -11,34 +11,35 @@ function AboutMe() {
     return(
         <div className="card bg-base-100 content-card">
             <div className="card-body text-3xl indent-10">
-                <div className="carousel w-full">
-                    <div id="pic1" className="carousel-item">
-                        <img src={Bass} />
+                    <div className="carousel h-1/2">
+                        <div id="pic1" className="carousel-item w-full justify-center">
+                            <figure className="w-1/4"><img src={Bass}/></figure>
+                        </div>
+                        <div id="pic2" className="carousel-item w-full justify-center">
+                            <figure className="w-1/2"><img src={Girlfriend}/></figure>
+                        </div>
+                        <div id="pic3" className="carousel-item w-full justify-center">
+                            <figure className="w-1/4"><img src={Nationals1}/></figure>
+                        </div>
+                        <div id="pic4" className="carousel-item w-full justify-center">
+                            <figure className="w-1/2"><img src={Nationals2}/></figure>
+                        </div>
+                        <div id="pic5" className="carousel-item w-full justify-center">
+                            <figure className="w-1/4"><img src={Meowth}/></figure>
+                        </div>
+                        <div id="pic6" className="carousel-item w-full justify-center">
+                            <figure className="w-1/4"><img src={Ash}/></figure>
+                        </div>
                     </div>
-                    <div id="pic2" className="carousel-item">
-                        <img src={Girlfriend} />
+                    <div className="flex justify-center w-full py-1 gap-2">
+                        <a href="#pic1" className="btn btn-xs">1</a>
+                        <a href="#pic2" className="btn btn-xs">2</a>
+                        <a href="#pic3" className="btn btn-xs">3</a>
+                        <a href="#pic4" className="btn btn-xs">4</a>
+                        <a href="#pic5" className="btn btn-xs">5</a>
+                        <a href="#pic6" className="btn btn-xs">6</a>
                     </div>
-                    <div id="pic3" className="carousel-item">
-                        <img src={Nationals1} />
-                    </div>
-                    <div id="pic4" className="carousel-item">
-                        <img src={Nationals2} />
-                    </div>
-                    <div id="pic5" className="carousel-item">
-                        <img src={Meowth} />
-                    </div>
-                    <div id="pic6" className="carousel-item">
-                        <img src={Ash} />
-                    </div>
-                </div>
-                <div className="flec justify-center w-full py-1 gap-2">
-                    <a href="#pic1" className="btn btn-xs">1</a>
-                    <a href="#pic2" className="btn btn-xs">2</a>
-                    <a href="#pic3" className="btn btn-xs">3</a>
-                    <a href="#pic4" className="btn btn-xs">4</a>
-                    <a href="#pic5" className="btn btn-xs">5</a>
-                    <a href="#pic6" className="btn btn-xs">6</a>
-                </div>
+
                 <div className="block">
                     <img src={Headshot} className="w-1/5 float-right" />
                     <p className="pb-10">Hi, my name is Landon Tardiff. I'm a software developer based in Oklahoma City, Oklahoma and have an immense amount of passion for the field. I love to learn and am always willing to take an opportunity to expand my knowledge of developing software and applications.</p>
