@@ -8,8 +8,8 @@ function AboutMe() {
         <div className="card bg-base-100 content-card">
             <div className="card-body">
                     <div className="tabs">
-                        <a className="tab tab-lifted bg-base-200 border-0 text-4xl h-fit">INTRODUCTION</a>
-                        <div className="tab-content bg-base-200 p-10 mb-10 flex flex-row">
+                        <a className="tab tab-lifted bg-base-200 border-0 text-4xl h-fit" style={{pointerEvents: "none"}}>INTRODUCTION</a>
+                        <div className="tab-content bg-base-200 p-10 mb-10 flex flex-row" style={{borderRadius: "0 1rem 1rem 1rem"}}>
                                 <img className="w-1/4 h-1/4 rounded-lg shadow-2xl"  src={Headshot}/>
                                 <p className="text-3xl px-16 indent-10">
                                     Hi, my name is Landon Tardiff. I'm a software developer based in Oklahoma City, Oklahoma and have an immense amount of passion for the field. I love to learn and am always willing to take an opportunity to expand my knowledge of developing software and applications.
@@ -21,8 +21,8 @@ function AboutMe() {
                     </div>
                     
                     <div className="tabs">
-                        <a className="tab tab-lifted bg-base-200 border-0 text-4xl h-fit ml-auto">ABOUT ME</a>
-                        <div className="tab-content bg-base-200 p-10 mb-10 flex flex-row">
+                        <a className="tab tab-lifted bg-base-200 border-0 text-4xl h-fit ml-auto" style={{pointerEvents: "none"}}>ABOUT ME</a>
+                        <div className="tab-content bg-base-200 p-10 mb-10 flex flex-row" style={{borderRadius: "1rem 0 1rem 1rem"}}>
                                 <p className="text-3xl px-16 indent-10">
                                     I was born on August 22nd, 2003 in Oklahoma City, Oklahoma to a loving family and community. I've been raised to always care for others and to do the right thing, principles that I hold at the core of my being to this day. 
                                     I pride myself on who I am and who I've become and I try to do my best to show that through how I talk and how I present myself to others and even myself. I first discovered my love for software development in sophomore year of high school when I enroll in Francis Tuttle's Computer Science Academy and haven't looked back since. 
@@ -33,8 +33,8 @@ function AboutMe() {
                     </div>
 
                     <div className="tabs">
-                        <a className="tab tab-lifted bg-base-200 border-0 text-4xl h-fit">WHAT I LIKE TO DO</a>
-                        <div className="tab-content bg-base-200 p-10 mb-10 flex flex-row">
+                        <a className="tab tab-lifted bg-base-200 border-0 text-4xl h-fit" style={{pointerEvents: "none"}}>WHAT I LIKE TO DO</a>
+                        <div className="tab-content bg-base-200 p-10 mb-10 flex flex-row" style={{borderRadius: "0 1rem 1rem 1rem"}}>
                             <img className="w-1/4 h-1/4 rounded-lg shadow-2xl"  src={Interests}/>
                             <p className="text-3xl px-16 indent-10">
                                 I have a few hobbies I like to apply myself to, for betterment of myself, or even just to relax after a long day. One of the biggest hobbies, and at this point passions, I have is playing music. I love to perform and even just sit and learn new songs or techniques. I mainly play the bass guitar, but I also am branching out and expanding my repetoire to electric guitar and drums as well!
