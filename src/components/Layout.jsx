@@ -20,7 +20,7 @@ function Layout() {
              <div className="navbar bg-base-300 flex-col min-h-max">
                 <div className="navbar-start" />
                 <div className="navbar-center flex-col">
-                    <p className="text-4xl">John Landon Tardiff</p>
+                    <p className="text-3xl">John Landon Tardiff</p>
                     <div className="tabs">
                         <a id="about-me-tab" className="tab nav-tab text-2xl" href="/about-me">About Me</a>
                         <a id="experience-tab" className="tab nav-tab text-2xl"  href="/experience">Experience</a>
