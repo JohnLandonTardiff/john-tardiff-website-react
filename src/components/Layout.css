@@ -20,3 +20,7 @@
 .drawer-content {
     height: 100%;
 }
+
+.layout-title {
+    font-size: 2rem;
+}
