@@ -4,6 +4,23 @@ function WorkExperience() {
     return(
         <div className="carousel carousel-center w-full experience-carousel">
             <ExperienceSlide slideNumber={1} firstSlide>
+                <h2 className="card-title text-3xl">Junior Software Developer - Nextshift llc.</h2>
+                <h3 className="text-3xl">October 2024 to April 2025</h3>
+                <ul className="list-disc pl-5">
+                    <li><p className="text-2xl">Used JavaScript, Node.JS, and OpenTelemetry to add and maintain logs and metrics to existing node.js apis for clients</p></li>
+                    <li><p className="text-2xl">Used Javascript, Node.js and OpenTelemetry to create libraries to facilitate boilerplate logging and metrics using OpenTelemetry</p></li>
+                    <li><p className="text-2xl">Used Yaml to create pipeline configurations for libraries and APIs being hosted and deployed on Jenkins Pipeline Manager</p></li>
+                </ul>
+            </ExperienceSlide>
+            <ExperienceSlide slideNumber={2}>
+                <h2 className="card-title text-3xl">Software Engineer - Leverage Software Group</h2>
+                <h3 className="text-3xl">July 2024 to September 2024</h3>
+                <ul className="list-disc pl-5">
+                    <li><p className="text-2xl">Used Razor and ASP.NET MVC to add features to Web Applications used by clients of the company</p></li>
+                    <li><p className="text-2xl">Used SQL Server to manage databases for client applications</p></li>
+                </ul>
+            </ExperienceSlide>
+            <ExperienceSlide slideNumber={3}>
                 <h2 className="card-title text-3xl">Junior Software Developer - Pacesetter Claims</h2>
                 <h3 className="text-3xl">December 2023 to July 2024</h3>
                 <ul className="list-disc pl-5">
@@ -13,7 +30,7 @@ function WorkExperience() {
                     <li><p className="text-2xl">Created Azure CI/CD Pipelines for deploying web application environments</p></li>
                 </ul>
             </ExperienceSlide>
-            <ExperienceSlide slideNumber={2}>
+            <ExperienceSlide slideNumber={4}>
                 <h2 className="card-title text-3xl">Junior Software Developer - amshot</h2>
                 <h3 className="text-3xl">May 2023 to December 2023</h3>
                 <ul className="list-disc pl-5">
@@ -22,7 +39,7 @@ function WorkExperience() {
                     <li><p className="text-2xl">Used Agile principles to manage time between multiple clients to ensure deadlines and expectations were met</p></li>
                 </ul>
             </ExperienceSlide>
-            <ExperienceSlide slideNumber={3} lastSlide>
+            <ExperienceSlide slideNumber={5} lastSlide>
             <h2 className="card-title text-3xl">Summer 2022 It Intern - Devon Energy</h2>
                 <h3 className="text-3xl">May 2022 to August 2022</h3>
                 <ul className="list-disc pl-5">

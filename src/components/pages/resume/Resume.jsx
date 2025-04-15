@@ -19,6 +19,7 @@ function Resume() {
                 </a>
                 <Document file={ResumePDF}>
                     <Page pageNumber={1} scale={1.5}></Page>
+                    <Page pageNumber={2} scale={1.5}></Page>
                 </Document>
 
             </div>

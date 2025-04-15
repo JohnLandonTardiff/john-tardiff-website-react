@@ -22,10 +22,10 @@ function Layout() {
                 <div className="navbar-center flex-col">
                     <p className="text-3xl">John Landon Tardiff</p>
                     <div className="tabs">
-                        <a id="about-me-tab" className="tab nav-tab text-2xl" href="/about-me">About Me</a>
-                        <a id="experience-tab" className="tab nav-tab text-2xl"  href="/experience">Experience</a>
-                        <a id="resume-tab" className="tab nav-tab text-2xl" href="/resume">Resume</a>
-                        <a id="contact-tab" className="tab nav-tab text-2xl" href="/contact">Contact</a>
+                        <a id="about-me-tab" className="tab nav-tab text-2xl text-base-content" href="/about-me">About Me</a>
+                        <a id="experience-tab" className="tab nav-tab text-2xl text-base-content"  href="/experience">Experience</a>
+                        <a id="resume-tab" className="tab nav-tab text-2xl text-base-content" href="/resume">Resume</a>
+                        <a id="contact-tab" className="tab nav-tab text-2xl text-base-content" href="/contact">Contact</a>
                     </div>
                 </div>
                 <div className="navbar-end" />
